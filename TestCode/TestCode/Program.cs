@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Solutions;
+﻿using Solutions;
+using System;
 
 namespace TestCode
 {
@@ -11,7 +7,13 @@ namespace TestCode
     {
         static void Main(string[] args)
         {
-            HelloWorld.HelloWorldHelper();
+            //HelloWorld.HelloWorldHelper();
+            //NumbersSumToValueQuora.HelperNumbersSumToValueQuora();
+            TupleAverageCounting.HelperTupleAverage(1);
+            TupleAverageCounting.HelperTupleAverage(2);
+            TupleAverageCounting.HelperTupleAverage(3);
+            TupleAverageCounting.HelperTupleAverage(10);
+            TupleAverageCounting.HelperTupleAverage(19);
 
             Console.ReadLine();
         }
