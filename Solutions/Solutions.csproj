@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BST_Larger_than_K.cs" />
     <Compile Include="HelloWorld.cs" />
+    <Compile Include="K_Largest_BST.cs" />
     <Compile Include="NumbersSumToValueQuora.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TupleAverageCounting.cs" />
