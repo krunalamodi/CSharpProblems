@@ -22,32 +22,17 @@ namespace Solutions
 
         public static int find_K_Largest(BTree root, int k, int[] arr, int indx)
         {
-            if (indx == k)
-            {
-                return k;
-            }
-
-            if ((root.left == null) && (root.right == null))
-            {
-                arr[indx] = root.data;
-                indx++;
-                return indx;
-            }
-
-            if (root.right != null)
+            if ((root != null) && (indx < k))
             {
                 indx = find_K_Largest(root.right, k, arr, indx);
-            }
-            if (indx < k)
-            {
-                arr[indx] = root.data;
-                indx++;
-
-                if (root.left != null)
+                if (indx < k)
                 {
+                    arr[indx] = root.data;
+                    indx++;
                     indx = find_K_Largest(root.left, k, arr, indx);
                 }
             }
+
             return indx;
         }
 
