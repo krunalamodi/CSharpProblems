@@ -49,6 +49,7 @@ class Program
         {
             int indexFromOne = i + 1;
 
+            // if value is not at correct position, then place it at right place
             if (arr[i] != indexFromOne)
             {
                 // If correct value is already present at that location, report duplicate.
